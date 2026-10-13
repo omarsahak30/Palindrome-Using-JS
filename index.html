@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+<body>
+    <h2>JavaScript Plaindrome Checking Function</h2>
+     
+    <script>
+
+        function palindrome(myString) {
+        var input = myString.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+
+        var revesedInput = input.split('').revese().join('');
+
+        if (input === revesedInput) {
+            document.write("<div>" + myString + " is a palindrome <div>");
+        } else {
+            document.write("<div>" + myString + " is not a palindrome <div>");
+        }
+    }
+
+    palindrome("madam")
+
+    </script>
+</body>
+
+</html>
